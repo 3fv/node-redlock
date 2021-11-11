@@ -41,7 +41,7 @@
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.2.0",
-    "ioredis": "^4.19.2",
+    "ioredis": "^4.28.0",
     "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
     "typescript": "~4.4.3"
@@ -57,10 +57,13 @@
     "prepublishOnly": "yarn install && yarn lint && yarn build && yarn test"
   },
   "peerDependencies": {
-    "ioredis": "^4.19.2"
+    "ioredis": "^4.28.0"
   },
   "dependencies": {
     "node-abort-controller": "^2.0.0"
+  },
+  "resolutions": {
+    "ioredis": "4.28.0"
   },
   "type": "commonjs",
   "exports": "./dist/index.js"
