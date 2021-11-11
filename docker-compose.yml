@@ -73,6 +73,8 @@ services:
       - builder
       - redis_single_instance
     image: node:16
+    tty: true
+    stdin_open: true
     working_dir: /workspace
     command: ./scripts/await.sh node_modules/.bin/ava ./scripts/await.sh dist/index.js yarn test:development
     environment:

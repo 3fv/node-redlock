@@ -56,9 +56,12 @@
     "prepare": "yarn build",
     "prepublishOnly": "yarn install && yarn lint && yarn build && yarn test"
   },
+  "peerDependencies": {
+    "ioredis": "^4.19.2"
+  },
   "dependencies": {
     "node-abort-controller": "^2.0.0"
   },
-  "type": "module",
+  "type": "commonjs",
   "exports": "./dist/index.js"
 }

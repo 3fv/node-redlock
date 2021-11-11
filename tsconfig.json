@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es2020"],
     "target": "es2018",
-    "module": "es2020",
+    "module": "commonjs",
     "outDir": "./dist",
     "declaration": true,
     "declarationDir": "./dist",
@@ -10,7 +10,8 @@
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
     "sourceMap": true
   },
   "include": ["./src/**/*"]
